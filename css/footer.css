@@ -1,0 +1,234 @@
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    padding: 50px 0 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #e74c3c, #f39c12);
+}
+
+/* Liên hệ */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-label {
+    font-size: 13px;
+    color: #bdc3c7;
+}
+
+.contact-link {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #e74c3c;
+}
+
+.contact-time {
+    font-size: 12px;
+    color: #95a5a6;
+}
+
+/* Giới thiệu */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links li a:hover {
+    color: #e74c3c;
+    padding-left: 5px;
+}
+
+/* Theo dõi */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+.social-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.social-item.facebook:hover {
+    background: #3b5998;
+}
+
+.social-item.youtube:hover {
+    background: #ff0000;
+}
+
+.social-item.zalo:hover {
+    background: #0068ff;
+}
+
+.social-item span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.certificates {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cert-img {
+    width: 80px;
+    height: 32px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Đối tác thanh toán */
+.payment-partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.partner-logo {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.partner-logo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.partner-logo img {
+    width: 100%;
+    height: 30px;
+}
+
+.social-item, .social-item * {
+    color: inherit;
+    text-decoration: none !important;
+}
+.social-item:hover, .social-item:hover * {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-contact,
+    .footer-links,
+    .social-links,
+    .payment-partners {
+        align-items: center;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+    color: #95a5a6;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

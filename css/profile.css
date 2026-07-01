@@ -1,0 +1,115 @@
+.user-menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: flex-end;
+}
+
+.user-avatar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: background 0.2s;
+}
+
+.user-avatar-wrapper:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #4b5966;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.caret-icon {
+    color: #ecf0f1;
+    font-size: 12px;
+}
+
+/* Dropdown Menu */
+.user-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 280px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 2000;
+}
+
+.user-dropdown-menu.show {
+    display: block !important;
+}
+
+/* Header bên trong Dropdown */
+.user-info-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+}
+
+.user-avatar.small {
+    width: 40px;
+    height: 40px;
+    background-color: #e4e6eb;
+    color: #1c1e21;
+}
+
+.user-text h6 {
+    margin: 0;
+    color: #050505;
+    font-weight: 600;
+}
+
+.user-text small {
+    color: #65676b;
+}
+
+/* Các hàng link trong Dropdown */
+.user-dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    color: #050505 !important;
+    text-decoration: none !important;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.user-dropdown-menu a:hover {
+    background: #f2f2f2;
+}
+
+.icon-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #e4e6eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #1c1e21;
+}
+
+.user-dropdown-menu hr {
+    margin: 8px 0;
+    border: 0;
+    border-top: 1px solid #ced0d4;
+}
