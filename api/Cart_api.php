@@ -16,6 +16,7 @@ class CartApi extends Api {
         $action = $this->getParam('action');
 
         switch ($action) {
+        	echo "hello world";
             case 'list':
                 $user_id = $this->getParam('user_id', 0);
                 $cart_id = $this->cartModel->getOrCreateCart($user_id);
